@@ -1,6 +1,6 @@
 //컴퓨터와 가위바위보하기
 import java.util.Scanner;
-public class practive10 {
+public class practice10 {
 
 	public static void main(String[] args) {
 		Scanner s = new Scanner(System.in);
