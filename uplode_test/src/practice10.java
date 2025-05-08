@@ -17,33 +17,50 @@ public class practice10 {
 		
 		System.out.println("컴퓨터의 가위/바위/보 ==> " + comHand);
 		
-		//비교하여 결과 도출하기
+		//비교 사용자: if/else, 컴퓨터: swich
+		
 		//사용자가 가위를 냈을 경우
 		if (myHand.equals("가위")) {
-			if (comHand.equals("가위"))
-				System.out.println("비겼습니다.");
-			else if (comHand.equals("바위"))
-				System.out.println("졌습니다.");
-			else if (comHand.equals("보"))
-				System.out.println("이겼습니다.");
+			switch (comHand) {
+				case "가위":
+					System.out.println("비겼습니다.");
+					break;
+				case "바위":
+					System.out.println("졌습니다.");
+		        	break;
+				case "보":
+					System.out.println("이겼습니다.");
+		        	break;
+			}
 		}
 		//사용자가 바위를 냈을경우
 		else if (myHand.equals("바위")) {
-			if (comHand.equals("가위"))
-				System.out.println("이겼습니다.");
-			else if (comHand.equals("바위"))
-				System.out.println("비겼습니다.");
-			else if (comHand.equals("보"))
-				System.out.println("졌습니다.");
+			switch (comHand) {
+				case "가위":
+					System.out.println("이겼습니다.");
+					break;
+				case "바위":
+					System.out.println("비겼습니다.");
+					break;
+				case "보":
+					System.out.println("졌습니다.");
+					break;
+			}
 		}
+
 		//사용자가 보를 냈을경우
 		else if (myHand.equals("보")) {
-			if (comHand.equals("가위"))
-				System.out.println("졌습니다.");
-			else if (comHand.equals("바위"))
-				System.out.println("이겼습니다.");
-			else if (comHand.equals("보"))
-				System.out.println("비겼습니다.");
+			switch (comHand) {
+				case "가위":
+					System.out.println("졌습니다.");
+					break;
+				case "바위":
+					System.out.println("이겼습니다.");
+					break;
+				case "보":
+					System.out.println("비겼습니다.");
+					break;
+			}
 		}
 		//이외의 답변을 한 경우
 		else {
